@@ -1,6 +1,6 @@
-FROM centos:6.4
-MAINTAINER Jon Hadfield
-RUN yum install -y java-1.7.0-openjdk
+FROM centos
+MAINTAINER Radhakrishna
+RUN yum install -y java-1.8.0-openjdk
 RUN wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 RUN rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
 RUN yum install -y jenkins
